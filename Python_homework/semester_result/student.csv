@@ -1,0 +1,4 @@
+group_id,stud_id,fio,country,stip,payment
+НБИ-01-22,12345,Иванов Иван Иванович,Russia,100000,budget
+НПИбд-01-22,54321,Петров Петр Петрович,USA,0,contract
+НБИ-01-22,98765,Сидоров Сидор Сидорович,China,0,contract_50_off
