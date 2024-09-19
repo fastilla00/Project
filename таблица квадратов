@@ -1,6 +1,14 @@
+
 PROCEDURE  PrintSqT(nStart, nEnd)
   LOCAL nCount, nMaxLen, nLineCount, nNum, nRow, nCol, nMaxDigits
 nMaxNum = Max(ABS(nStart), ABS(nEnd))
 nMaxDigits = LEN(STR(nMaxNum * nMaxNum))
-nColCount = 10 #?
-nLineCount = CEL-1)
+nColCount = 10 //?
+nLineCount = (CEILING(nEnd - nStart + 1) / nColCount)
+// for
+FOR nRow=1 TO nColCount
+  FOR nCol=1 TO nColCount
+    nNum = nStart + (nRow - 1)*nColCount + (nCol-1)
+IF(nNUM>=nStart) AND (nNum<=nEnd)
+ACCEPT TO nStart
+ACCEPT TO nEnd
