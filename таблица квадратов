@@ -10,5 +10,6 @@ FOR nRow=1 TO nColCount
   FOR nCol=1 TO nColCount
     nNum = nStart + (nRow - 1)*nColCount + (nCol-1)
 IF(nNUM>=nStart) AND (nNum<=nEnd)
+ @ nRow*2, (nCol-1)*(nMaxDigits+2) SAY
 ACCEPT TO nStart
 ACCEPT TO nEnd
