@@ -1,0 +1,28 @@
+// Устанавливаем формат даты
+SET DATE ITALIAN
+
+// Определяем структуру базы данных (например, STUD)
+// Поля: fio (C - символы), gender (L - логический тип), dr (D - дата), stip (N - числовой)
+st = { {'fio', 'C', 15, 0}, ;
+       {'gender', 'L', 1, 0}, ;
+       {'dr', 'D', 8, 0}, ;
+       {'stip', 'N', 8, 2} }
+
+// Создаем базу данных STUD
+DBCREATE("STUD", st)
+
+// Открываем базу данных для ввода данных
+USE STUD NEW
+APPEND BLANK
+
+// Добавляем записи
+FOR i = 1 TO 15
+    APPEND BLANK
+    REPLACE fio WITH "Ivanov" + STR(i), ;
+            gender WITH .T., ;
+            dr WITH CTOD("06-09-1999"), ;
+            stip WITH 1500 + (i * 100)
+NEXT
+
+// Сохранение изменений
+CLOSE ALL
