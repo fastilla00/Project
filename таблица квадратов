@@ -1,0 +1,6 @@
+PROCEDURE  PrintSqT(nStart, nEnd)
+  LOCAL nCount, nMaxLen, nLineCount, nNum, nRow, nCol, nMaxDigits
+nMaxNum = Max(ABS(nStart), ABS(nEnd))
+nMaxDigits = LEN(STR(nMaxNum * nMaxNum))
+nColCount = 10 #?
+nLineCount = CEL-1)
