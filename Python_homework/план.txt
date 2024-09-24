@@ -1,9 +1,0 @@
----Рабочая директория  **рабочая папка
- --komission_rules.json
- --semester_result **папка с csv файлами
-  -student.csv
-  -new_student.csv
-  -assessment.csv
-  -group.csv
- --next_semester **сюда скрипт закинет файлы
- --process_students.py **скрипт

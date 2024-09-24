@@ -1,7 +1,0 @@
-{
-  "stip_rules": {"100": 30000, "95": 20000, "86": 10000, "69": 5000, "51": 0},
-  "default_stip": 5000,
-  "move_next_curse_rules": {
-    "depts_threshold": 2
-  }
-}
