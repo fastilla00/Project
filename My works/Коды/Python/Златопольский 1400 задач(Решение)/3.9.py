@@ -1,0 +1,5 @@
+n=int(input())
+m = int(n/60)
+print("Целые минуты: ", m)
+c = int(n/3600)
+print("Целые часы: ", m)
